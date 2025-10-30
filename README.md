@@ -23,6 +23,8 @@ It provisions a **VPC**, **Security Group**, **EC2 instance**, and **S3 bucket**
 
 ## 📂 Project Structure
 
+```
+
 terraform-aws-infra/
 │
 ├── main.tf                   # Root module — calls all submodules
@@ -54,6 +56,8 @@ terraform-aws-infra/
         ├── main.tf
         ├── variables.tf
         └── outputs.tf
+
+````
 
 ---
 
