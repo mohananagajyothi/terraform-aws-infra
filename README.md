@@ -55,7 +55,6 @@ terraform-aws-infra/
         ├── variables.tf
         └── outputs.tf
 
-
 ---
 
 ## ⚙️ How to Use
