@@ -102,8 +102,11 @@ Visit AWS Console → VPC, EC2, S3
 
 Copy the EC2 Public IP and connect via SSH:
 
+```
+
 ssh -i "my-keypair.pem" ec2-user@<public_ip>
 
+````
 ---
 
 ### 5️⃣ Destroy Infrastructure
