@@ -75,20 +75,20 @@ Before running Terraform, ensure you have:
 Update the `terraform.tfvars` file with your values:
 
 
-region        = "ap-south-1"
-key_name      = "my-keypair"
-ami_id        = "ami-0f5ee92e2d63afc18"
-instance_type = "t2.micro"
+- region        = "ap-south-1"
+- key_name      = "my-keypair"
+- ami_id        = "ami-0f5ee92e2d63afc18"
+- instance_type = "t2.micro"
 
 ---
 
 ### 3️⃣ Initialize & Deploy
 
-terraform init
-terraform fmt -recursive
-terraform validate
-terraform plan
-terraform apply -auto-approve
+- terraform init
+- terraform fmt -recursive
+- terraform validate
+- terraform plan
+- terraform apply -auto-approve
 
 ---
 
@@ -110,15 +110,15 @@ terraform destroy -auto-approve
 
 🧠 Key Concepts Covered
 
-Terraform Modules
+- Terraform Modules
 
-Provider Configuration
+- Provider Configuration
 
-Variables & Outputs
+- Variables & Outputs
 
-Infrastructure Provisioning & Cleanup
+- Infrastructure Provisioning & Cleanup
 
-Reusable Modular Design
+- Reusable Modular Design
 
 ---
 
@@ -130,9 +130,9 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-public_ip = "13.232.45.122"
-vpc_id    = "vpc-0f3930a5874e24e9d"
-bucket_id = "terraform-aws-infra-us-b8c7b7fa"
+- public_ip = "13.232.45.122"
+- vpc_id    = "vpc-0f3930a5874e24e9d"
+- bucket_id = "terraform-aws-infra-us-b8c7b7fa"
 
 ---
 
