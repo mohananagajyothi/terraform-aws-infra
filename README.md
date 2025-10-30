@@ -25,35 +25,35 @@ It provisions a **VPC**, **Security Group**, **EC2 instance**, and **S3 bucket**
 
 terraform-aws-infra/
 │
-├── main.tf # Root module — calls all submodules
-├── variables.tf # Root-level input variables
-├── outputs.tf # Root-level outputs
-├── provider.tf # AWS provider configuration
-├── terraform.tfvars # Variable values (region, key, etc.)
-├── terraform.tfvars.example # Example variable file (for reference)
-├── .gitignore # Ignore sensitive/state files
-├── README.md # Project documentation
+├── main.tf                   # Root module — calls all submodules
+├── variables.tf              # Root-level input variables
+├── outputs.tf                # Root-level outputs
+├── provider.tf               # AWS provider configuration
+├── terraform.tfvars          # Variable values (region, key, etc.)
+├── terraform.tfvars.example  # Example variable file
+├── .gitignore                # Ignore sensitive/state files
+├── README.md                 # Project documentation
 │
 └── modules/
-├── vpc/
-│ ├── main.tf
-│ ├── variables.tf
-│ └── outputs.tf
-│
-├── security/
-│ ├── main.tf
-│ ├── variables.tf
-│ └── outputs.tf
-│
-├── ec2/
-│ ├── main.tf
-│ ├── variables.tf
-│ └── outputs.tf
-│
-└── s3/
-├── main.tf
-├── variables.tf
-└── outputs.tf
+    ├── vpc/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    │
+    ├── security/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    │
+    ├── ec2/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    │
+    └── s3/
+        ├── main.tf
+        ├── variables.tf
+        └── outputs.tf
 
 
 
@@ -74,11 +74,13 @@ Before running Terraform, ensure you have:
 
 Update the `terraform.tfvars` file with your values:
 
-```hcl
+
 region        = "ap-south-1"
 key_name      = "my-keypair"
 ami_id        = "ami-0f5ee92e2d63afc18"
 instance_type = "t2.micro"
+
+---
 
 ### 3️⃣ Initialize & Deploy
 
@@ -87,6 +89,8 @@ terraform fmt -recursive
 terraform validate
 terraform plan
 terraform apply -auto-approve
+
+---
 
 ### 4️⃣ Verify Resources
 
@@ -98,6 +102,7 @@ Copy the EC2 Public IP and connect via SSH:
 
 ssh -i "my-keypair.pem" ec2-user@<public_ip>
 
+---
 
 ### 5️⃣ Destroy Infrastructure
 
@@ -115,6 +120,7 @@ Infrastructure Provisioning & Cleanup
 
 Reusable Modular Design
 
+---
 
 🧩 Example Output
 
@@ -128,6 +134,7 @@ public_ip = "13.232.45.122"
 vpc_id    = "vpc-0f3930a5874e24e9d"
 bucket_id = "terraform-aws-infra-us-b8c7b7fa"
 
+---
 
 👩‍💻 Author
 
@@ -137,5 +144,5 @@ Mohana Naga Jyothi
 
 💡 “Infrastructure as Code isn’t just automation — it’s confidence in every deploy.”
 
-
+---
 
