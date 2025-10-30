@@ -144,8 +144,7 @@ Outputs:
 👩‍💻 Author
 
 Mohana Naga Jyothi
-🌍 DevOps Engineer — Terraform • AWS • CI/CD
-📅 October 2025
+🌍 DevOps Engineer 
 
 💡 “Infrastructure as Code isn’t just automation — it’s confidence in every deploy.”
 
