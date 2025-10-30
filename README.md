@@ -30,7 +30,7 @@ terraform-aws-infra/
 ├── outputs.tf                # Root-level outputs
 ├── provider.tf               # AWS provider configuration
 ├── terraform.tfvars          # Variable values (region, key, etc.)
-├── terraform.tfvars.example  # Example variable file
+├── terraform.tfvars.example  # Example variable file (for reference)
 ├── .gitignore                # Ignore sensitive/state files
 ├── README.md                 # Project documentation
 │
@@ -54,6 +54,7 @@ terraform-aws-infra/
         ├── main.tf
         ├── variables.tf
         └── outputs.tf
+
 
 
 
